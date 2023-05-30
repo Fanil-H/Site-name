@@ -1,0 +1,226 @@
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+header{
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+/* Первая линия меню */
+#menu-top {
+    clear: both;
+    display: table;
+    width: 100%;
+}
+.menu {
+    width: 1100px;
+    height: 100px;
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+.menu ol {
+    width: 100%;
+    height: 100px;
+    margin: 0;
+    padding: 0;
+}
+.menu li {
+    display: inline-block;
+    text-decoration: none;
+}
+.menu a {
+    text-decoration: none;
+}
+.logotype {
+    float: left;
+    height: 100%;
+    font-size: 36px;
+    font-weight: 800;
+    color: red;
+}
+.logotype p{
+    margin: 28px 0;
+}
+.login {
+    height: 100%;
+    float: right;
+}
+.login i {
+    margin: 40px 5px;
+}
+.login a {
+    color: black;
+    font-size: 20px;
+    margin: 0 10px;
+}
+.btn {
+    float: right;
+    height: 100%;
+}
+button {
+    width: 160px;
+    height: 44px;
+    margin: 28px 0;
+    font-size: 20px;
+    border: none;
+    background-color: red;
+}
+button a {
+    color: white;
+}
+/* Вторая линия меню */
+#menu-bottom {
+    clear: both;
+    display: table;
+    width: 100%;
+    background-color: black;
+}
+
+.menu-lower {
+    color: white;
+    font-size: 24px;
+}
+.menu-lower li {
+    padding: 35px 10px;
+    transition: 0.6s;
+}
+
+.srch {
+    float: right;
+    padding: 30px 0;
+}
+.srch input {
+    height: 40px;
+}
+.menu-lower li:hover{
+    background-color: red;
+}
+/* Окончание Хеадера */
+
+/* Основная информация страницы: */
+
+#container {
+    clear: both;
+    display: table;
+    width: 100%;
+    height: auto;
+}
+.box {
+    clear: both;
+    display: table;
+    width: 1100px;
+    margin: auto;
+}
+.content {
+    clear: both;
+    display: table;
+    width: 75%;
+}
+.content ul{
+    padding-inline-start: 20px;
+}
+.content p {
+    font-weight: 500;
+}
+.box h4{
+    color: red;
+}
+.fts ol {
+    width: 100%;
+    height: 200px;
+    padding: 0;
+}
+.fts li {
+    display: block;
+    float: left;
+    width: 16%;
+    height: auto;
+    margin-right: 7px;
+}
+.product {
+    width: 100%;
+    height: auto;
+}
+.picture {
+    width: 100%;
+    height: 65%;
+    padding-top: 0;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.description {
+    width: 100%;
+    height: 75px;
+}
+.description a {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: 0.6s;
+}
+.description :hover{
+    color: rgb(234, 13, 234);
+}
+
+
+/* Медиа Запросы */
+
+@media (min-width: 1200px) {
+    .menu {
+        width: 1100px;
+        height: 100px;
+        margin: auto;
+    }
+    .box {
+        width: 1100px;
+    }
+}
+@media (max-width: 1199px) {
+    .menu {
+        width: 960px;
+        height: 100px;
+        margin: auto;
+    }
+    .box {
+        width: 960px;
+    }
+    .menu-lower li {
+        font-size: 22px;
+    }
+    button {
+        width: 120px;
+    }
+}
+@media (max-width: 992px) {
+    .menu {
+        width: 740px;
+        height: 100px;
+        margin: auto;
+    }
+    .box {
+        width: 740px;
+    }
+    .menu-lower li {
+        font-size: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .menu {
+        width: 600px;
+        height: 100px;
+        margin: auto;
+    }
+    .box {
+        width: 600px;
+    }
+    .menu-lower li {
+        font-size: 18px;
+    }
+}
